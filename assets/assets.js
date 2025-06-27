@@ -38,7 +38,23 @@ import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 import kalai from './kalai.jpg';
 import kalaipriyan from './kalaipriyan-img.jpg';
 import kalai1 from './kalaipriyan1.jpg'
-import kalaipriyanimg from './kalaipriyanimg.jpg'
+import kalaipriyanimg from './kalaipriyanimg.jpg';
+import reactimg from './react.svg';
+import mysqlimg from './mysql.png';
+import intellij from './intellij.jpeg';
+import java from './java.jpeg';
+import js from './js.png';
+import postman from './postman.png';
+import nodejs from './nodejs.png';
+import nextjs from './nextjs.png';
+import aws from './aws.png';
+import bootstrap from './bootstrap.png';
+import c from './c.png';
+import kalilinux from './kalilinux.png';
+import linux from './linux.png';
+import metamask from './metamask.png';
+import mui from './download.png';
+
 
 export const assets = {
     user_image,
@@ -80,7 +96,24 @@ export const assets = {
     right_arrow_bold_dark,
     kalaipriyan,
     kalai1,
-    kalaipriyanimg
+    kalaipriyanimg,
+    reactimg,
+    mysqlimg,
+    mongodb,
+    nodejs,
+    metamask,
+    intellij,
+    java,
+    js,
+    linux,
+    kalilinux,
+    c,
+    aws,
+    nextjs,
+    postman,
+    bootstrap,
+    mui
+    
 };
 
 export const workData = [
