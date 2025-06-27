@@ -53,7 +53,13 @@ import mui from './download.png';
 import blockchain from './blockchain.png';
 import report from './report-generator.png';
 import Event from './Event.png';
-import web3 from './web3.png'
+import web3 from './web3.png';
+import linkedIn from './linkedin.png';
+import mail from './mail.png';
+import github from './github.png';
+import email from './email.png';
+import email2 from './email2.png';
+import email3 from './email3.png';
 
 export const assets = {
     
@@ -112,7 +118,13 @@ export const assets = {
     blockchain,
     report,
     Event,
-    web3
+    web3,
+    linkedIn,
+    mail,
+    github,
+    email,
+    email2,
+    email3
     
 };
 
