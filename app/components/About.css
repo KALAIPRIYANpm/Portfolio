@@ -24,9 +24,11 @@
   }
 }
 
-.education-box {
+.education-box .experience-box{
   border: 1.5px solid #ccc;
   background-color: #f8f9fa;
+  padding: 16px;
+  margin-top: 20px;
 }
 
 #content {

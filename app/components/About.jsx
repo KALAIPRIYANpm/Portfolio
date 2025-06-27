@@ -6,12 +6,10 @@ import './About.css';
 const About = () => {
   return (
     <>
-      {/* Reduced top margin */}
       <h1 style={{ marginTop: '60px' }} className="section-title mb-4 text-center">
         About Me
       </h1>
 
-      {/* Reduced vertical padding */}
       <section className="about-section container py-4">
         <div className="row align-items-center g-2">
           {/* Image Left */}
@@ -27,7 +25,7 @@ const About = () => {
           </div>
 
           {/* Content Right */}
-          <div id='content' className="col-md-7 align-self-center">
+          <div id="content" className="col-md-7 align-self-center">
             <p>
               Passionate Full Stack Developer focused on building modern web applications using the MERN stack.
               Enjoys creating responsive, efficient, and user-friendly interfaces with strong backend support.
@@ -54,6 +52,23 @@ const About = () => {
               <div>
                 <h5 className="mb-1 fw-bold">Education</h5>
                 <p className="mb-0 text-muted">Bachelor of Engineering in Computer Science</p>
+              </div>
+            </div>
+
+            {/* Experience Box */}
+            <div className="experience-box mt-3 p-3 d-flex align-items-start rounded shadow-sm">
+              <Image
+                src={assets.project_icon} 
+                alt="Experience Icon"
+                width={40}
+                height={40}
+                className="me-3"
+              />
+              <div>
+                <h5 className="mb-1 fw-bold">Experience</h5>
+                <p className="mb-0 text-muted">
+                  Full Stack Intern at Neowep Software Technology – Built authentication systems, REST APIs, and responsive dashboards using the MERN stack.
+                </p>
               </div>
             </div>
           </div>
