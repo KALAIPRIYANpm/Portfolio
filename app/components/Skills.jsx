@@ -33,7 +33,7 @@ const Services = () => {
      
       <div className="row g-3 justify-content-center">
         {skills.map((skill, idx) => (
-          <div key={idx} className="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div key={idx} className="col-6 col-sm-6 col-md-4 col-lg-3">
             <div className="skill-box text-center shadow-sm">
               <Image src={skill.icon} alt={skill.name} width={40} height={40} />
               <p className="mt-2 small fw-medium">{skill.name}</p>
@@ -47,7 +47,7 @@ const Services = () => {
         {tools.map((icon, idx) => (
           <div key={idx} className="col-4 col-sm-3 col-md-2 col-lg-1">
             <div className="tool-box shadow-sm">
-              <Image src={icon} alt={`Tool ${idx}`} width={35} height={35} />
+              <Image src={icon} alt={`Tool ${idx}`} width={30} height={30} />
             </div>
           </div>
         ))}

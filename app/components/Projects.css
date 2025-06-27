@@ -1,0 +1,60 @@
+.project-card {
+  background-color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.project-img {
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+}
+
+.magic-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #222;
+  position: relative;
+  display: inline-block;
+}
+
+.magic-title::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 4px;
+  background-color: black;
+  margin: 10px auto 0;
+}
+
+
+.zoom-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(15, 15, 15, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  cursor: zoom-out;
+}
+
+.zoom-content {
+  position: relative;
+  width: 90%;
+  height: 90%;
+  max-width: 900px;
+  max-height: 600px;
+}
+
+.zoom-content img {
+  object-fit: contain;
+}
+

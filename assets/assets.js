@@ -50,7 +50,10 @@ import kalilinux from './kalilinux.png';
 import linux from './linux.png';
 import metamask from './metamask.png';
 import mui from './download.png';
-import blockchain from './blockchain.png'
+import blockchain from './blockchain.png';
+import report from './report-generator.png';
+import Event from './Event.png';
+import web3 from './web3.png'
 
 export const assets = {
     
@@ -106,7 +109,10 @@ export const assets = {
     postman,
     bootstrap,
     mui,
-    blockchain
+    blockchain,
+    report,
+    Event,
+    web3
     
 };
 
