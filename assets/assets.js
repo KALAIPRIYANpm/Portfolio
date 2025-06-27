@@ -35,7 +35,10 @@ import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
-import kalai from './kalai.jpg'
+import kalai from './kalai.jpg';
+import kalaipriyan from './kalaipriyan-img.jpg';
+import kalai1 from './kalaipriyan1.jpg'
+import kalaipriyanimg from './kalaipriyanimg.jpg'
 
 export const assets = {
     user_image,
@@ -75,7 +78,9 @@ export const assets = {
     send_icon,
     right_arrow_bold,
     right_arrow_bold_dark,
-    kalai
+    kalaipriyan,
+    kalai1,
+    kalaipriyanimg
 };
 
 export const workData = [

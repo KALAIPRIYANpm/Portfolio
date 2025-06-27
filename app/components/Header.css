@@ -1,0 +1,53 @@
+.fade-letter {
+  opacity: 0;
+  display: inline-block;
+  transform: translateY(10px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.fade-letter.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-in-section {
+  animation: fadeIn 1s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Shift text slightly left on large screens */
+.shift-left-lg {
+  margin-left: -30px;
+}
+
+@media (max-width: 768px) {
+  .shift-left-lg {
+    margin-left: 0;
+  }
+}
+
+/* Image wrapper with fallback background */
+.img-wrapper {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background-color: black;
+  border: 2px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Remove hover effect on Download CV */
+.no-hover:hover {
+  background-color: transparent !important;
+  color: inherit !important;
+  border-color: black !important;
+}

@@ -40,8 +40,8 @@ const MyNavbar = () => {
             <Nav className="justify-content-center flex-grow-1 gap-3 text-center">
               <Nav.Link href="#home" className="fs-5">Home</Nav.Link>
               <Nav.Link href="#about" className="fs-5">About Me</Nav.Link>
-              <Nav.Link href="#services" className="fs-5">Services</Nav.Link>
-              <Nav.Link href="#work" className="fs-5">My Work</Nav.Link>
+              <Nav.Link href="#services" className="fs-5">Skills</Nav.Link>
+              <Nav.Link href="#work" className="fs-5">Projects</Nav.Link>
               <Nav.Link href="#contact" className="fs-5">Contact</Nav.Link>
             </Nav>
 
