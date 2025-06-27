@@ -1,6 +1,8 @@
 import About from "./components/About";
 import Header from "./components/header";
 import Navbar from "./components/Navbar";
+// import Skills from "./components/Skills";
+import Services from "./components/Skills";
 
 export default function Home() {
   return (
@@ -8,6 +10,8 @@ export default function Home() {
     <Navbar/>
     <Header/>
     <About/>
+    <Services/>
+    
    
     </>
   );
