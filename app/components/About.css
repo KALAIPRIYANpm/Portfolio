@@ -2,35 +2,30 @@
   font-weight: bold;
   font-size: 2rem;
   margin-bottom: 2rem;
-  margin-top: -20px;
+  scroll-margin-top: 80px; /* Fix for navbar overlap on anchor scroll */
 }
 
 .about-section {
-  margin-top: 0;
-  margin-left: -20px;
+  margin-left: 40px;
+  margin-top: 50px;
 }
 
 .about-image {
   border-radius: 20px;
   max-width: 100%;
   height: auto;
-  margin-left: -50px;
 }
 
-/* Optional: Make image center-aligned on small screens */
-@media (max-width: 768px) {
-  .about-image {
-    margin-left: 0;
-  }
-}
-
-.education-box .experience-box{
+/* Fix: Separate selectors */
+.education-box,
+.experience-box {
   border: 1.5px solid #ccc;
   background-color: #f8f9fa;
   padding: 16px;
   margin-top: 20px;
 }
 
+/* Content wrapper */
 #content {
   margin-top: -20px;
   margin-left: -30px;
@@ -38,29 +33,30 @@
 
 /* 🔧 Responsive Fixes */
 @media (max-width: 768px) {
+  .section-title {
+    font-size: 1.6rem;
+  }
+
   .about-section {
     margin-left: 0;
     padding: 0 15px;
-  }
-
-  #content {
-    margin-top: 20px;
-    margin-left: 0;
     text-align: center;
   }
 
-  .education-box {
-    justify-content: center;
+  #content {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .education-box,
+  .experience-box {
     flex-direction: column;
     align-items: center !important;
     text-align: center;
   }
 
-  .education-box img {
+  .education-box img,
+  .experience-box img {
     margin-bottom: 10px;
-  }
-
-  .section-title {
-    font-size: 1.5rem;
   }
 }

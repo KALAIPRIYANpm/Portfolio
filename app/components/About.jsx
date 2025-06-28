@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import Image from 'next/image';
 import { assets } from '@/assets/assets';
@@ -6,14 +8,14 @@ import './About.css';
 const About = () => {
   return (
     <>
-      <h1 style={{ marginTop: '60px' }} className="section-title mb-4 text-center">
+      <h1 className="section-title text-center" id="about">
         About Me
       </h1>
 
-      <section style={{marginTop:"50px"}} className="about-section container py-4">
-        <div className="row align-items-center g-2">
+      <section className="about-section container py-4">
+        <div className="row align-items-center g-4">
           {/* Image Left */}
-          <div style={{marginTop:"-15px"}} className="col-md-5 text-center">
+          <div className="col-md-5 text-center">
             <Image
               src={assets.kalaipriyanimg}
               alt="Profile"
@@ -25,7 +27,7 @@ const About = () => {
           </div>
 
           {/* Content Right */}
-          <div id="content" className="col-md-7 align-self-center">
+          <div id="content" className="col-md-7">
             <p>
               Passionate Full Stack Developer focused on building modern web applications using the MERN stack.
               Enjoys creating responsive, efficient, and user-friendly interfaces with strong backend support.
@@ -41,7 +43,7 @@ const About = () => {
             </p>
 
             {/* Education Box */}
-            <div className="education-box mt-4 p-3 d-flex align-items-start rounded shadow-sm">
+            <div className="education-box d-flex align-items-start rounded shadow-sm">
               <Image
                 src={assets.edu_icon}
                 alt="Education Icon"
@@ -56,9 +58,9 @@ const About = () => {
             </div>
 
             {/* Experience Box */}
-            <div className="experience-box mt-3 p-3 d-flex align-items-start rounded shadow-sm">
+            <div className="experience-box d-flex align-items-start rounded shadow-sm">
               <Image
-                src={assets.project_icon} 
+                src={assets.project_icon}
                 alt="Experience Icon"
                 width={40}
                 height={40}
@@ -67,7 +69,8 @@ const About = () => {
               <div>
                 <h5 className="mb-1 fw-bold">Experience</h5>
                 <p className="mb-0 text-muted">
-                  Full Stack Intern at Neowep Software Technology – Built authentication systems, REST APIs, and responsive dashboards using the MERN stack.
+                  Full Stack Intern at Neowep Software Technology – Built authentication systems, REST APIs, and
+                  responsive dashboards using the MERN stack.
                 </p>
               </div>
             </div>
