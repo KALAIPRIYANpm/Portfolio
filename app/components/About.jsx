@@ -8,7 +8,7 @@ import './About.css';
 const About = () => {
   return (
     <>
-      <h1 className="section-title text-center" id="about">
+      <h1 style={{marginTop:"100px"}} className="section-title text-center" id="about">
         About Me
       </h1>
 
