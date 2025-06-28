@@ -10,10 +10,10 @@ const About = () => {
         About Me
       </h1>
 
-      <section className="about-section container py-4">
+      <section style={{marginTop:"50px"}} className="about-section container py-4">
         <div className="row align-items-center g-2">
           {/* Image Left */}
-          <div className="col-md-5 text-center">
+          <div style={{marginTop:"-15px"}} className="col-md-5 text-center">
             <Image
               src={assets.kalaipriyanimg}
               alt="Profile"

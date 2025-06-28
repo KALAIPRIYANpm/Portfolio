@@ -1,31 +1,29 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Navbar, Nav, Container, Button, Offcanvas } from 'react-bootstrap';
 import { BsMoon } from 'react-icons/bs';
 import { FiArrowUpRight } from 'react-icons/fi';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const MyNavbar = () => {
+  const [showOffcanvas, setShowOffcanvas] = useState(false);
+
+  const handleClose = () => setShowOffcanvas(false);
+  const handleShow = () => setShowOffcanvas(true);
+
   return (
-    <Navbar
-      expand="lg"
-      bg="light"
-      variant="light"
-      fixed="top"
-      className="shadow-sm py-3"
-    >
+    <Navbar expand="lg" bg="light" variant="light" fixed="top" className="shadow-sm py-3">
       <Container fluid className="px-3 px-md-5">
-        {/* Brand */}
         <Navbar.Brand href="#home" className="fw-bold fs-4">
           Kalaipriyan
         </Navbar.Brand>
 
-        {/* Offcanvas toggle */}
-        <Navbar.Toggle aria-controls="offcanvas-navbar" />
+        <Navbar.Toggle onClick={handleShow} aria-controls="offcanvas-navbar" />
 
-        {/* Offcanvas for mobile */}
         <Navbar.Offcanvas
+          show={showOffcanvas}
+          onHide={handleClose}
           id="offcanvas-navbar"
           aria-labelledby="offcanvas-navbar-label"
           placement="end"
@@ -38,11 +36,11 @@ const MyNavbar = () => {
 
           <Offcanvas.Body>
             <Nav className="justify-content-center flex-grow-1 gap-3 text-center">
-              <Nav.Link href="#home" className="fs-5">Home</Nav.Link>
-              <Nav.Link href="#about" className="fs-5">About Me</Nav.Link>
-              <Nav.Link href="#services" className="fs-5">Skills</Nav.Link>
-              <Nav.Link href="#work" className="fs-5">Projects</Nav.Link>
-              <Nav.Link href="#contact" className="fs-5">Contact</Nav.Link>
+              <Nav.Link href="#home" className="fs-5" onClick={handleClose}>Home</Nav.Link>
+              <Nav.Link href="#about" className="fs-5" onClick={handleClose}>About Me</Nav.Link>
+              <Nav.Link href="#services" className="fs-5" onClick={handleClose}>Skills</Nav.Link>
+              <Nav.Link href="#work" className="fs-5" onClick={handleClose}>Projects</Nav.Link>
+              <Nav.Link href="#contact" className="fs-5" onClick={handleClose}>Contact</Nav.Link>
             </Nav>
 
             <div className="d-flex justify-content-center justify-content-lg-end align-items-center gap-3 mt-4 mt-lg-0">

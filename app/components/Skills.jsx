@@ -29,7 +29,7 @@ const Services = () => {
   return (
 <>
      <h2 style={{marginTop:"50px"}} className="text-center mb-5 ">Skills</h2>
-    <section className="skills-section container py-5">
+    <section style={{marginTop:"-40px"}} className="skills-section container py-5">
      
       <div className="row g-3 justify-content-center">
         {skills.map((skill, idx) => (
