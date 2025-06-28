@@ -18,7 +18,7 @@ const projects = [
     description:
       "An automated event management platform built with the MERN stack. Admins can create and manage events, while users can register, log in, and book event slots. Events are dynamically managed based on real-time schedules and user interaction.",
     tech: ['MongoDB', 'Express', 'React', 'Node.js'],
-    image: assets.Event,
+    image: assets.emg,
     link: "https://github.com/KALAIPRIYANpm/Authentication"
   },
   {

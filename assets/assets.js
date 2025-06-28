@@ -60,6 +60,7 @@ import github from './github.png';
 import email from './email.png';
 import email2 from './email2.png';
 import email3 from './email3.png';
+import emg from './emg.png';
 
 export const assets = {
     
@@ -124,7 +125,8 @@ export const assets = {
     github,
     email,
     email2,
-    email3
+    email3,
+    emg
     
 };
 
