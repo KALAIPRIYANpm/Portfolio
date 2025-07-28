@@ -1,5 +1,4 @@
 'use client';
-
 import React, { useState } from 'react';
 import { Navbar, Nav, Container, Button, Offcanvas } from 'react-bootstrap';
 import { BsMoon } from 'react-icons/bs';
@@ -7,10 +6,11 @@ import { FiArrowUpRight } from 'react-icons/fi';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const MyNavbar = () => {
-  const [showOffcanvas, setShowOffcanvas] = useState(false);
 
+  const [showOffcanvas, setShowOffcanvas] = useState(false);
   const handleClose = () => setShowOffcanvas(false);
   const handleShow = () => setShowOffcanvas(true);
+
 
   return (
     <Navbar expand="lg" bg="light" variant="light" fixed="top" className="shadow-sm py-3">
@@ -18,7 +18,6 @@ const MyNavbar = () => {
         <Navbar.Brand href="#home" className="fw-bold fs-4">
           Kalaipriyan
         </Navbar.Brand>
-
         <Navbar.Toggle onClick={handleShow} aria-controls="offcanvas-navbar" />
 
         <Navbar.Offcanvas

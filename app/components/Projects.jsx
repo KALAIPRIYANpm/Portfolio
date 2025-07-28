@@ -8,28 +8,33 @@ const projects = [
   {
     title: "Web3 Hospital Management System",
     description:
-      "A decentralized hospital platform using Ethereum, React, and IPFS. Features include NFT-based patient records, doctor/admin dashboards, and secure blockchain data storage. IPFS guarantees tamper-proof medical document storage.",
-    tech: ['React', 'Node.js', 'Solidity', 'IPFS', 'MongoDB'],
+     "A decentralized hospital platform using Ethereum, React, and IPFS. Features include NFT-based patient records, doctor/admin dashboards, and secure blockchain data storage. IPFS guarantees tamper-proof medical document storage.",
+    tech:['React', 'Node.js', 'Solidity', 'IPFS', 'MongoDB'],
     image: assets.web3,
-    link: "https://github.com/KALAIPRIYANpm/Web3-HMS",
+    link:"https://github.com/KALAIPRIYANpm/Web3-HMS",
   },
+
+
   {
     title: "Event Management System",
     description:
       "An automated event management platform built with the MERN stack. Admins can create and manage events, while users can register, log in, and book event slots. Events are dynamically managed based on real-time schedules and user interaction.",
-    tech: ['MongoDB', 'Express', 'React', 'Node.js'],
+    tech:['MySQL', 'Express', 'React', 'Node.js'],
     image: assets.emg,
-    link: "https://github.com/KALAIPRIYANpm/Authentication"
+    link:"https://github.com/KALAIPRIYANpm/Authentication"
   },
+
+
   {
     title: "Automated Report Generator",
     description:
       "A MERN-based platform for college faculty to input activity details and auto-generate structured reports based on title and mode of action. Simplifies academic documentation and reduces manual workload.",
-    tech: ['MongoDB', 'Express', 'React', 'Node.js', 'JS Pdf'],
+    tech:['MySQL', 'Express', 'React', 'Node.js', 'JS Pdf'],
     image: assets.report,
-    link: "https://github.com/KALAIPRIYANpm/Automated-Report-Generator"
+    link:"https://github.com/KALAIPRIYANpm/Automated-Report-Generator"
   },
 ];
+
 
 const Projects = () => {
   const [zoomImage, setZoomImage] = useState(null);
@@ -38,7 +43,7 @@ const Projects = () => {
     <section className="projects-section container py-5">
       <h2 className="text-center mb-5 ">Projects</h2>
 
-      {/* Modal for zoomed image */}
+     
       {zoomImage && (
         <div className="zoom-modal" onClick={() => setZoomImage(null)}>
           <div className="zoom-content">

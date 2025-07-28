@@ -1,32 +1,21 @@
-import { Outfit , Ovo } from "next/font/google";
-import "./globals.css";
-
-
-const outfit = Outfit({
-  subsets: ["latin"],weight:["400" , "500" , "600" ,"700"]
-});
-
-const ovo = Ovo({
-  subsets: ["latin"],weight:["400"]
-});
-
-
+// app/layout.js
+import './globals.css';
 
 export const metadata = {
-  title: "Portfolio - Kalaipriyan ",
-  description: "interactive portfolio",
+  title: 'My Portfolio',
+  description: 'A responsive portfolio using PT Serif',
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${outfit.className} ${ovo.className}
-
-         antialiased`}
-      >
-        {children}
-      </body>
+      <head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <body>{children}</body>
     </html>
   );
 }

@@ -1,41 +1,16 @@
+/* app/globals.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-*{
-  font-family: Outfit;
-}
-
-/* Default light mode */
+/* Set PT Serif globally */
 body {
-  background-color: #ffffff;
-  color: #000000;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: 'PT Serif', serif;
+  background-color: #fff;
+  color: #000;
 }
 
-/* Dark mode */
-body.dark-mode {
-  background-color: #121212;
-  color: #ffffff;
-}
-
-
-.hover-scale:hover {
-  transform: scale(1.05);
-  cursor: pointer;
-  border-color: #0d6efd; /* Bootstrap primary color */
-  box-shadow: 0 0 12px rgba(13, 110, 253, 0.4);
-}
-
-.hover-scale:hover {
-  transform: scale(1.05);
-  border-color: #0d6efd;
-  box-shadow: 0 0 15px rgba(13, 110, 253, 0.4);
-  cursor: pointer;
-}
-
-
-.scroll-offset {
-  scroll-margin-top: 80px; /* Adjust this based on your navbar height */
+/* Ensure inheritance throughout the app */
+* {
+  font-family: inherit;
 }

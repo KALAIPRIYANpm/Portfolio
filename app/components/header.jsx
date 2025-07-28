@@ -25,7 +25,6 @@ const Header = () => {
     <section className="header-section">
       <div className="container px-3 px-md-5">
         <div className="row align-items-center flex-column-reverse flex-lg-row">
-          {/* Left Text */}
           <div className="col-lg-6 text-center text-lg-start mt-4 mt-lg-0 header-left">
             <h1 className="fw-bold display-5 mb-3">
               Hi, I'm{' '}
