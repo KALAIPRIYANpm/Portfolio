@@ -1,16 +1,16 @@
-/* app/globals.css */
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Set PT Serif globally */
 body {
-  font-family: 'PT Serif', serif;
-  background-color: #fff;
-  color: #000;
+  font-family: 'Funnel Display', sans-serif;
 }
 
-/* Ensure inheritance throughout the app */
-* {
-  font-family: inherit;
+html {
+  scroll-behavior: smooth;
+}
+.scroll-offset {
+  scroll-margin-top: 80px; 
 }

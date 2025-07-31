@@ -40,7 +40,7 @@ const Projects = () => {
   const [zoomImage, setZoomImage] = useState(null);
 
   return (
-    <section className="projects-section container py-5">
+    <section style={{marginTop:"-20px"}} className="projects-section container py-5">
       <h2 className="text-center mb-5 ">Projects</h2>
 
      

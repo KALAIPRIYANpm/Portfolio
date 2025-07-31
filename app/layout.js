@@ -1,21 +1,16 @@
-// app/layout.js
 import './globals.css';
+// import { DarkModeProvider } from './components/DarkModeContext';
 
 export const metadata = {
   title: 'My Portfolio',
-  description: 'A responsive portfolio using PT Serif',
+  description: 'A portfolio styled with Funnel Display',
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap"
-          rel="stylesheet"
-        />
-      </head>
       <body>{children}</body>
+       {/* <DarkModeProvider>{children}</DarkModeProvider> */}
     </html>
   );
 }

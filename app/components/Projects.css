@@ -1,3 +1,8 @@
+*{
+  font-family: 'Funnel Display', sans-serif;
+}
+
+
 .project-card {
   background-color: #fff;
   transition: transform 0.3s ease;

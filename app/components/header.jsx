@@ -23,6 +23,7 @@ const Header = () => {
 
   return (
     <section className="header-section">
+      {/* <h1 style={{ fontFamily: 'Funnel Display, sans-serif' }}>My Funnel Styled Heading</h1> */}
       <div className="container px-3 px-md-5">
         <div className="row align-items-center flex-column-reverse flex-lg-row">
           <div className="col-lg-6 text-center text-lg-start mt-4 mt-lg-0 header-left">
@@ -65,7 +66,6 @@ const Header = () => {
             </div>
           </div>
 
-          {/* Right Image */}
           <div className="col-lg-6 d-flex justify-content-center mb-4 mb-lg-0">
             <div className="img-wrapper shadow-lg">
               <Image

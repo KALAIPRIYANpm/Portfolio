@@ -1,11 +1,15 @@
-/* Section spacing */
+*{
+  font-family: 'Funnel Display', sans-serif;
+}
+
 .header-section {
   margin-top: 80px;
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-/* Name letter animation */
+
+
 .fade-letter {
   opacity: 0;
   display: inline-block;
@@ -17,13 +21,11 @@
   transform: translateY(0);
 }
 
-/* Highlighted name */
 .highlighted-name {
   color: grey;
   display: inline-block;
 }
 
-/* Responsive layout adjustments */
 .header-left {
   padding-right: 30px;
 }
@@ -34,7 +36,6 @@
   }
 }
 
-/* Profile image wrapper */
 .img-wrapper {
   width: 320px;
   height: 320px;
@@ -58,7 +59,6 @@
   }
 }
 
-/* Button hover reset */
 .no-hover:hover {
   background-color: transparent !important;
   color: inherit !important;

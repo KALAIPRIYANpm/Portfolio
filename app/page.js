@@ -1,3 +1,4 @@
+"use client";
 import Header from "./components/header";
 import Navbar from "./components/Navbar";
 import About from "./components/About";
@@ -9,29 +10,28 @@ import ParticlesContainer from "./components/particles";
 export default function Home() {
   return (
     <>
+      <Navbar />
+      <ParticlesContainer />
 
-    <div id="/" className="scroll-offset">
-      <Navbar/>
+      <section id="home" className="scroll-offset">
+        <Header />
+      </section>
 
-    </div>
-    <ParticlesContainer/>
+      <section id="about" className="scroll-offset">
+        <About />
+      </section>
 
-    <div id="home" className="scroll-offset">
-<Header/>
-    </div>
-<div id="about" className="scroll-offset">
-  <About />
-</div>
-<div id="services" className="scroll-offset">
-  <Services />
-</div>
-<div id="work" className="scroll-offset">
-  <Projects />
-</div>
-<div id="contact" className="scroll-offset">
-  <Contact />
-</div>
+      <section id="services" className="scroll-offset">
+        <Services />
+      </section>
 
+      <section id="work" className="scroll-offset">
+        <Projects />
+      </section>
+
+      <section id="contact" className="scroll-offset">
+        <Contact />
+      </section>
     </>
   );
 }
